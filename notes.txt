@@ -1,0 +1,1 @@
+password location: /etc/natas_webpass/natasX
