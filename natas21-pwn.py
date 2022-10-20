@@ -7,7 +7,7 @@ source_url = base_url2 + "index-source.html"
 s = requests.session()
 
 username = "natas21"
-password = "IFekPyrQXftziDEsUr3x21sYuahypdgJ"
+password = "89OWrTkGmiLZLv12JY4tLj2c4FW0xn56"
 
 target_url=base_url2  + "?debug&admin=1&align=start&bgcolor=red&submit=Update&fontsize=150%"
 print(target_url)

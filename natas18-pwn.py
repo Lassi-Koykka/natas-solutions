@@ -5,7 +5,7 @@ i = 0
 
 while True:
     sessid = i + 1 % 641
-    res = requests.get(base_url, headers=auth_headers, cookies={'PHPSESSID': f"{sessid}"})
+    res = requests.get(base_url, auth=("natas18", "8NEDUUxg8kFgPV84uLwvZkGn6okJQ6aq"), cookies={'PHPSESSID': f"{sessid}"})
     if("regular" not in res.text):
         print(res.text)
         break

